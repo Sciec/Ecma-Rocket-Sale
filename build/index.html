@@ -19,22 +19,13 @@
         </h1>
 
         <div>
-
-         <button
-         id="hamburger-button"
-         class="text-3xl cursor-pointer md:hidden"
-         >
-
-
-         <!-- This is the variation1 of the navbar icon -->
-            <!-- &#9776; -->
-
-
+          <button
+            id="hamburger-button"
+            class="cursor-pointer text-3xl md:hidden"
+          >
+            <!-- This is the variation1 of the navbar icon -->
+            &#9776;
           </button>
-
-
-
-
 
           <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
             <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
@@ -43,29 +34,42 @@
           </nav>
         </div>
       </section>
-        
-      <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden ">
 
+      <section
+        id="mobile-menu"
+        class="absolute top-0 hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
 
-       
-       <!-- <button class="text-8xl self-end px-6">&times;</button> -->
-       
-
-       <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-        <a href="#hero" class="w-full text-center py-6 hover:opacity-90 ">Home</a>
-        <a href="#rockets" class="w-full text-center py-6 hover:opacity-90 ">Our Rockets</a>
-        <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90 ">Testimonials</a>
-        <a href="#contact" class="w-full text-center py-6 hover:opacity-90 ">Contact Us</a>
-        <a href="#footer" class="w-full text-center py-6 hover:opacity-90 ">Legal</a>
-       </nav>
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full py-6 text-center hover:opacity-90"
+            >Home</a
+          >
+          <a href="#rockets" class="w-full py-6 text-center hover:opacity-90"
+            >Our Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
+            >Contact Us</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
       </section>
-
     </header>
 
     <main class="mx-auto max-w-4xl">
       <section
         id="hero"
-        class="mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row widescreen:section-min-height tallscreen:section-min-height"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
       >
         <article class="sm:w-1/2">
           <h2
@@ -95,7 +99,10 @@
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="rockets" class="my-12 scroll-mt-20 p-6 widescreen:section-min-height tallscreen:section-min-height">
+      <section
+        id="rockets"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
@@ -173,7 +180,10 @@
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="testimonials" class="my-12 scroll-mt-20 p-6 widescreen:section-min-height tallscreen:section-min-height">
+      <section
+        id="testimonials"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
@@ -245,7 +255,10 @@
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="contact" class="my-12 scroll-mt-16 p-6 widescreen:section-min-height tallscreen:section-min-height">
+      <section
+        id="contact"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6"
+      >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
@@ -289,26 +302,28 @@
       </section>
     </main>
 
-    <footer id="footer" class="bg-teal-700 text-white text-xl">
-        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
-            <address>
-                <h2>Ecma Rocket-Powered Products, Inc.</h2>
-                555 Astro Way<br>
-                Fairfield, New Jersey 12345-5555<br>
-                Email: <a href="mailto:inquiries@Ecmarockets.com">Inquires@ecmaRockets.com</a><br>
-                Phone: <a href="tel:+15555555555">(555) 555-5555</a>
-            </address>
-            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
-                <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
-                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-                <a href="#contact" class="hover:opacity-90">Contact Us</a>
-            </nav>
-            <div class="flex flex-col sm:gap-2">
-                <p class="text-right">Copyright &copy;<time id="year"></time>
-            </p>
-            <p class="text-right">All Rights Reserved</p>
-          </div>
+    <footer id="footer" class="bg-teal-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Ecma Rocket-Powered Products, Inc.</h2>
+          555 Astro Way<br />
+          Fairfield, New Jersey 12345-5555<br />
+          Email:
+          <a href="mailto:inquiries@Ecmarockets.com">Inquires@ecmaRockets.com</a
+          ><br />
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a>
         </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy;<time id="year"></time></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
       </section>
     </footer>
   </body>
