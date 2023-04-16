@@ -2,4 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* underneath, put your own classes */
+@layer utilities {
+ /* adding inside of utilities */
+ .section-min-height {
+  min-height: calc(100vh - 68px);
+ }
+}
