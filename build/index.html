@@ -20,14 +20,24 @@
 
         <div>
 
-         <button
+         <button 
          id="hamburger-button"
-         class="text-3xl cursor-pointer md:hidden"
+         class="text-3xl cursor-pointer md:hidden relative w-8 h-8"
          >
 
 
          <!-- This is the variation1 of the navbar icon -->
             <!-- &#9776; -->
+
+
+
+          <!-- This is the variation2 of the navbar icon -->  
+          <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 
+          transition-all duration-500
+          before:contents-[''] before:bg-white before:h-1 before:rounded before:absolute before:w-8 before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:contents-[''] after:bg-white after:h-1 after:rounded after:absolute after:w-8 after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3 ">
+             
+          </div>
+
 
 
           </button>
@@ -44,10 +54,10 @@
         </div>
       </section>
         
-      <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden ">
+      <section id="mobile-menu" class="absolute top-68  bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden ">
 
 
-       
+
        <!-- <button class="text-8xl self-end px-6">&times;</button> -->
        
 
@@ -308,7 +318,6 @@
             </p>
             <p class="text-right">All Rights Reserved</p>
           </div>
-        </address>
       </section>
     </footer>
   </body>
